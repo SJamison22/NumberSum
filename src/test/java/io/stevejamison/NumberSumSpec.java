@@ -28,4 +28,14 @@ public class NumberSumSpec {
         assertEquals("Total should be 6",expected,actual);
     }
 
+    @Test
+    public void runTest(){
+        ByteArrayInputStream in = new ByteArrayInputStream("5".getBytes());
+        System.setIn(in);
+        NumberSum num = new NumberSum();
+        int expected = 15;
+        int actual = num.run();
+        assertEquals("Total should be 15",expected,actual);
+    }
+
 }

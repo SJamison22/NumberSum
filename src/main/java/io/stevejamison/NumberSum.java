@@ -19,6 +19,16 @@ public class NumberSum {
         for(int i = 0; i <= num; i++){
             sum += i;
         }
+        System.out.println(sum);
         return sum;
+    }
+
+    public int run(){
+        return addNumbers(promptUser("Enter a number: "));
+    }
+
+    public static void main(String[] args) {
+        NumberSum sum = new NumberSum();
+        sum.run();
     }
 }
